@@ -11,14 +11,14 @@
   </h2>
 
   {% for seminar in seminars.seminars %}
-    <div class="item">
+    <div class="pub_td1">
 
       <span class="seminar-title">
         <a href="{{ seminar.link }}">{{ seminar.title }}</a>
       </span>
 
       {% if seminar.content %}
-      - <span class="seminar-content">{{ seminar.content }}</span>
+      - <span class="pub_td2">{{ seminar.content }}</span>
       {% endif %}
 
     </div>
