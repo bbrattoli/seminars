@@ -2,19 +2,13 @@
 {% if seminars %}
 <section class="section seminars-section">
 
-  <h2 class="section-title">
+  <h2>
     <span class="fa-stack fa-xs">
       <i class="fas fa-circle fa-stack-2x"></i>
       <i class="fas fa-archive fa-stack-1x fa-inverse"></i>
     </span>
     {{ sections.title }}
   </h2>
-
-  {% if seminars.intro %}
-  <div class="intro">
-      <p>{{ seminars.intro }}</p>
-  </div>
-  {% endif %}
 
   {% for seminar in seminars.seminars %}
     <div class="item">
@@ -23,7 +17,7 @@
         <a href="{{ seminar.link }}">{{ seminar.title }}</a>
       </span>
 
-      {% if seminar.tagline %}
+      {% if seminar.content %}
       - <span class="seminar-content">{{ seminar.content }}</span>
       {% endif %}
 
