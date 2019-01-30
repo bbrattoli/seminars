@@ -1,7 +1,30 @@
+<!--
 ---
 layout: default
 ---
 
 
 {% include seminars.html %}
+-->
+<html lang="en">
+{% include head.html %}
+
+<body>
+  <div id="container">
+    <div class="section_div">
+       <h1>CompVis Seminars</h1>
+    </div>
+    <div id="section_div">
+        <!-- {{ content }} -->
+	{% include seminars.html %}
+    </div>
+  </div>
+
+ <!-- {% include footer.html %}
+
+{% include scripts.html %}
+-->
+</body>
+
+</html>
 

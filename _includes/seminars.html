@@ -1,24 +1,20 @@
 {% assign seminars = site.data.data.seminars %}
 {% if seminars %}
+<h2>{{ sections.title }}</h2>
+<table class="pub_table"><tbody>
+  {% for seminar in seminars.seminars %}
+      <tr>
+      <td class="pub_td1">
+	<div class="">
+	  <a href="{{ seminar.link }}">{{ seminar.title }}</a>
+	</div>
+      </td>
 
+      {% if seminar.content %}
+      <td class="pub_td2">{{ seminar.content }}</td>
+      {% endif %}
+      </tr>
+  {% endfor %}
 
-    <div class="section_div">
-	<h2>{{ sections.title }}</h2>
-	<table class="pub_table"><tbody>
-	  {% for seminar in seminars.seminars %}
-	      <tr>
-	      <td class="pub_td1">
-		<div class="">
-		  <a href="{{ seminar.link }}">{{ seminar.title }}</a>
-	        </div>
-	      </td>
-
-	      {% if seminar.content %}
-	      <td class="pub_td2">{ seminar.content }}</td>
-	      {% endif %}
-	      </tr>
-	  {% endfor %}
-
-	</tbody></table>
-    </div>
+</tbody></table>
 {% endif %}
