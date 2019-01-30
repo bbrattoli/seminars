@@ -1,0 +1,34 @@
+{% assign seminars = site.data.data.seminars %}
+{% if seminars %}
+<section class="section seminars-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-archive fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ sections.title }}
+  </h2>
+
+  {% if seminars.intro %}
+  <div class="intro">
+      <p>{{ seminars.intro }}</p>
+  </div>
+  {% endif %}
+
+  {% for seminar in seminars.seminars %}
+    <div class="item">
+
+      <span class="seminar-title">
+        <a href="{{ seminar.link }}">{{ seminar.title }}</a>
+      </span>
+
+      {% if seminar.tagline %}
+      - <span class="seminar-content">{{ seminar.content }}</span>
+      {% endif %}
+
+    </div>
+  {% endfor %}
+
+</section>
+{% endif %}

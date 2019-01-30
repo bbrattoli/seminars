@@ -1,32 +1,7 @@
-{% assign seminars = site.data.seminars%}
+---
+layout: default
+---
 
-<html lang="en"> 
-{% include head.html %}
 
-<body>
-  <div class="wrapper">
-  CIAO!!!!!!
+{% include seminars.html %}
 
-<!--  {% for seminar in seminars.seminar %}
-    <div class="item">
-
-      <span class="project-title">
-        <a href="{{ seminar.file }}">{{ seminar.title }}</a>
-      </span>
-
-      {% if seminar.content %}
-      - <span class="seminar-content">{{ seminar.content }}</span>
-      {% endif %}
-
-    </div>
-  {% endfor %}
--->
-
-  </div>
-
-<!--  {% include footer.html %}
-
-{% include scripts.html %}-->
-</body>
-
-</html>

@@ -1,0 +1,16 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+seminars:
+    title: Seminars
+
+    seminars:
+        - title: First seminar
+          file:  test.txt
+          content: Empty content
+
+        - title: Second seminar 
+          file:  test.txt
+          content: Empty content
+
