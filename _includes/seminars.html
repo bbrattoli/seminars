@@ -10,16 +10,16 @@
     {{ sections.title }}
   </h2>
 
-    <div class="">
+    <div class="section_div">
 <table class="pub_table"><tbody>
   {% for seminar in seminars.seminars %}
       <tr>
-      <td><span class="seminar-title">
+      <td class="pub_td2"><span class="seminar-title">
         <a href="{{ seminar.link }}">{{ seminar.title }}</a>
       </span></td>
 
       {% if seminar.content %}
-      <td><span class="seminar-content">{{ seminar.content }}</span></td>
+      <td class="pub_td2"><span class="seminar-content">{{ seminar.content }}</span></td>
       {% endif %}
       </tr>
   {% endfor %}
